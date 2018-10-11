@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="input_a_secret_message">input a secret message</string>
+    <string name="message">Message</string>
+    <string name="student_id">Student ID</string>
+    <string name="todo">TODO</string>
+</resources>
