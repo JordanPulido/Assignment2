@@ -4,4 +4,7 @@
     <string name="message">Message</string>
     <string name="student_id">Student ID</string>
     <string name="todo">TODO</string>
+    <string name="type_id_here">type id here</string>
+    <string name="your_message_is">Your Message Is:</string>
+
 </resources>

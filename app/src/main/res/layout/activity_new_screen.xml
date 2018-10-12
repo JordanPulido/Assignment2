@@ -7,17 +7,29 @@
     tools:context=".NewScreen">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/display_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="429dp"
         android:layout_marginEnd="108dp"
         android:layout_marginStart="108dp"
         android:layout_marginTop="108dp"
-        android:text="Your Message Is:"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="@string/your_message_is"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintBottom_toTopOf="@+id/display_message"
+        app:layout_constraintEnd_toStartOf="@+id/display_message"
+        app:layout_constraintStart_toStartOf="@+id/display_message" />
 </android.support.constraint.ConstraintLayout>

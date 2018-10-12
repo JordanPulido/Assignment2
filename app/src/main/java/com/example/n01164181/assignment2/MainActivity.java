@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,9 +17,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void sendMessage(View view)
-    {
+
+    public void sendMessage(View view) {
+        EditText editText = findViewById(R.id.user_message);
+        String message = editText.getText().toString();
+
         Intent intent = new Intent(MainActivity.this, NewScreen.class);
+        intent.putExtra("EXTRA_MESSAGE",message);
         startActivity(intent);
     }
 
@@ -37,4 +42,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
